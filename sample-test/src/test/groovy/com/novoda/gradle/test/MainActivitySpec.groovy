@@ -10,6 +10,6 @@ class MainActivitySpec extends RoboSpecification {
         activity.onCreate(null)
 
         then:
-        activity.findViewById(com.novoda.gradle.test.R.id.text) != null
+        activity.findViewById(com.novoda.gradle.test.R.id.text).text == activity.getString(com.novoda.gradle.test.R.string.hello_world)
     }
 }
