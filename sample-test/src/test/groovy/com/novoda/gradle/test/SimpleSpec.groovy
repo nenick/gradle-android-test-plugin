@@ -6,6 +6,6 @@ class SimpleSpec extends Specification {
 
     def "it is not null"() {
         expect:
-        new Simple() != null
+        new Simple().toString() != null
     }
 }
