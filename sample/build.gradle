@@ -25,9 +25,15 @@ android {
     }
 
     buildTypes {
-        debug {}
-        release {}
-        QA {}
+        debug {
+            applicationIdSuffix ".debug"
+        }
+        release {
+            applicationIdSuffix ".release"
+        }
+        QA {
+            applicationIdSuffix ".qa"
+        }
     }
 
     productFlavors {
